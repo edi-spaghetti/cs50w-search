@@ -5,107 +5,102 @@
     <title>Query Advanced</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="container-fluid">
 
-        <div class="row">
-            <div class="col-sm-10"></div>
-            <div class="col-sm-1">
-                <button>Text</button>
-            </div>
-            <div class="col-sm-1">
-                <button>Image</button>
+        <!-- Links -->
+        <div id="banner" class="row text-right">
+            <div class="col">
+                <a class="btn btn-link" href="index.html" role="button">Text</a>
+                <a class="btn btn-link" href="image-search.html" role="button">Image</a>
             </div>
         </div>
 
-        <div class="row">
-            <h1>Advanced Search</h1>
+        <!-- Title -->
+        <div class="row text-left" id="advancedTitle">
+            <div>Advanced Search</div>
         </div>
+        <hr/>
 
         <form action="https://google.com/search">
 
             <!-- Headers -->
-            <div class="row">
-                <div class="col-md-2">
-                    Label
-                </div>
-                <div class="col-md-6">
-                    Inputs
-                </div>
-                <div class="col-md-4">
-                    Examples
-                </div>
+            <div class="row" id="advancedHeader">
+                <div class="col-sm-2">Find pages with...</div>
+                <div class="col-sm-6"></div>
+                <div class="col-sm-4"><span class="example">Examples</span></div>
             </div>
 
             <!-- All These Words -->
             <div class="row">
-                <div class="col-md-2">
+                <div class="col-sm-2">
                     all these words...
                 </div>
-                <div class="col-md-6">
-                    <input type="text">
+                <div class="col-sm-6">
+                    <input class="form-control" type="text">
                 </div>
-                <div class="col-md-4">
-                    Type words space-separated like a normal search e.g. "abc 123" will bring up jackson 5's 'ABC Easy As 1-2-3'
+                <div class="col-sm-4">
+                    <span class="example">abc 123</span>
                 </div>
             </div>
 
             <!-- Exact Word or Phrase -->
             <div class="row">
-                <div class="col-md-2">
+                <div class="col-sm-2">
                     this exact word or phrase:
                 </div>
-                <div class="col-md-6">
-                    <input type="text">
+                <div class="col-sm-6">
+                    <input class="form-control" type="text">
                 </div>
-                <div class="col-md-4">
-                    Typing "abc 123" will bring up the alphabet song instead of jackson 5
+                <div class="col-sm-4">
+                    <span class="example">"abc 123"</span>
                 </div>
             </div>
 
             <!-- Any Words -->
             <div class="row">
-                <div class="col-md-2">
+                <div class="col-sm-2">
                     any of these words:
                 </div>
-                <div class="col-md-6">
-                    <input type="text">
+                <div class="col-sm-6">
+                    <input class="form-control" type="text">
                 </div>
-                <div class="col-md-4">
-                    Typing "abc 123" here will bring up results that include either 'abc' or '123' (or both). ABC news is the most popular result.
+                <div class="col-sm-4">
+                    <span class="example">abc or "one two three"</span>
                 </div>
             </div>
 
             <!-- Exclusive -->
             <div class="row">
-                <div class="col-md-2">
+                <div class="col-sm-2">
                     none of these words:
                 </div>
-                <div class="col-md-6">
-                    <input type="text">
+                <div class="col-sm-6">
+                    <input class="form-control" type="text">
                 </div>
-                <div class="col-md-4">
-                    Typing "abc 123" here will show everything except pages with 'abc' and '123'. No results found for this one.
+                <div class="col-sm-4">
+                    <span class="example">-abc -"one two three"</span>
                 </div>
             </div>
 
             <!-- Submit -->
             <div class="row">
-                <div class="col-md-2">
+                <div class="col-sm-2">
 
                 </div>
-                <div class="col-md-6">
-                    <input type="submit" value="Advanced Search">
+                <div class="col-sm-6 text-right">
+                    <button class="btn btn-primary" type="submit">Advanced Search</button>
                 </div>
-                <div class="col-md-4">
+                <div class="col-sm-4">
 
                 </div>
 
             </div>
 
-        </form>
-
+            </form>
+        <hr/>
     </div>
 </body>
 </html>

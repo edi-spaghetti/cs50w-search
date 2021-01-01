@@ -10,10 +10,31 @@
     margin: 10px;
 }
 
+.row {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#advancedTitle {
+    color: red;
+    margin: 20px;
+    font-size: 20px;
+}
+
+#advancedHeader {
+    margin-bottom: 15px;
+    margin-top: 15px;
+    font-size: 15px;
+}
+
 @media only screen and (min-width: 768px) {
     #responsive {
         width: 500px;
         height: 200px;
+    }
+
+    span.example {
+        font-family: 'Courier New', monospace;
     }
 }
 
@@ -21,5 +42,9 @@
     #responsive {
         width: 250px;
         height: auto;
+    }
+
+    span.example {
+        display: none;
     }
 }
