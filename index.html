@@ -8,10 +8,12 @@
     </head>
     <body>
         <div class="container-fluid">
+
+            <!-- Links -->
             <div id="banner" class="row text-right">
                 <div class="col">
-                    <button class="btn btn-link">Image</button>
-                    <button class="btn btn-link">Advanced</button>
+                    <a class="btn btn-link" href="image-search.html" role="button">Image</a>
+                    <a class="btn btn-link" href="advanced-search.html" role="button">Advanced</a>
                 </div>
             </div>
 
@@ -26,7 +28,6 @@
             <div class="row text-center">
                 <div id="searchForm" class="container-fluid">
                     <form action="https://google.com/search">
-                        <input type="hidden" name="btnG" value="Search">
                         <div id="searchBox" class="row">
                             <div class="col-sm-8 col-sm-offset-2">
                                 <input class="form-control form-rounded" type="text" name="q">
@@ -35,8 +36,8 @@
 
                         <div class="row">
                             <div class="col-sm-12">
-                                <input  class="btn btn-light" type="submit" value="Google Search">
-                                <input class="btn btn-light" type="submit" value="I'm feeling lucky!">
+                                <button class="btn btn-light" type="submit" name="btnG" value="Search">Google Search</button>
+                                <button class="btn btn-light" type="submit" name="btnI" value="1">I'm Feeling Lucky!</button>
                             </div>
                         </div>
                     </form>
