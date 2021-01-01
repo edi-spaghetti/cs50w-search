@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Query Advanced</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container-fluid">
+
+        <div class="row">
+            <div class="col-sm-10"></div>
+            <div class="col-sm-1">
+                <button>Text</button>
+            </div>
+            <div class="col-sm-1">
+                <button>Image</button>
+            </div>
+        </div>
+
+        <div class="row">
+            <h1>Advanced Search</h1>
+        </div>
+
+        <form action="https://google.com/search">
+
+            <!-- Headers -->
+            <div class="row">
+                <div class="col-md-2">
+                    Label
+                </div>
+                <div class="col-md-6">
+                    Inputs
+                </div>
+                <div class="col-md-4">
+                    Examples
+                </div>
+            </div>
+
+            <!-- All These Words -->
+            <div class="row">
+                <div class="col-md-2">
+                    all these words...
+                </div>
+                <div class="col-md-6">
+                    <input type="text">
+                </div>
+                <div class="col-md-4">
+                    Type words space-separated like a normal search e.g. "abc 123" will bring up jackson 5's 'ABC Easy As 1-2-3'
+                </div>
+            </div>
+
+            <!-- Exact Word or Phrase -->
+            <div class="row">
+                <div class="col-md-2">
+                    this exact word or phrase:
+                </div>
+                <div class="col-md-6">
+                    <input type="text">
+                </div>
+                <div class="col-md-4">
+                    Typing "abc 123" will bring up the alphabet song instead of jackson 5
+                </div>
+            </div>
+
+            <!-- Any Words -->
+            <div class="row">
+                <div class="col-md-2">
+                    any of these words:
+                </div>
+                <div class="col-md-6">
+                    <input type="text">
+                </div>
+                <div class="col-md-4">
+                    Typing "abc 123" here will bring up results that include either 'abc' or '123' (or both). ABC news is the most popular result.
+                </div>
+            </div>
+
+            <!-- Exclusive -->
+            <div class="row">
+                <div class="col-md-2">
+                    none of these words:
+                </div>
+                <div class="col-md-6">
+                    <input type="text">
+                </div>
+                <div class="col-md-4">
+                    Typing "abc 123" here will show everything except pages with 'abc' and '123'. No results found for this one.
+                </div>
+            </div>
+
+            <!-- Submit -->
+            <div class="row">
+                <div class="col-md-2">
+
+                </div>
+                <div class="col-md-6">
+                    <input type="submit" value="Advanced Search">
+                </div>
+                <div class="col-md-4">
+
+                </div>
+
+            </div>
+
+        </form>
+
+    </div>
+</body>
+</html>
