@@ -1,0 +1,25 @@
+.form-rounded {
+    border-radius: 1rem;
+}
+
+#banner {
+    padding: 10px;
+}
+
+#searchBox {
+    margin: 10px;
+}
+
+@media only screen and (min-width: 768px) {
+    #responsive {
+        width: 500px;
+        height: 200px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    #responsive {
+        width: 250px;
+        height: auto;
+    }
+}
