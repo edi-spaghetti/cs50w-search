@@ -1,37 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Query Image</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <head>
+        <meta charset="UTF-8">
+        <title>Query Image</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <link rel="stylesheet" href="styles.css">
     </head>
     <body>
         <div class="container-fluid">
-            <div class="row">
-                <div class="col-sm-10"></div>
-                <div class="col-sm-1">
-                    <button>Text</button>
-                </div>
-                <div class="col-sm-1">
-                    <button>Advanced</button>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-sm-12">
-                    <img src="temp-icon.gif" width="500" height="200">
+
+            <!-- Links -->
+            <div id="banner" class="row text-right">
+                <div class="col">
+                    <a class="btn btn-link" href="index.html" role="button">Text</a>
+                    <a class="btn btn-link" href="advanced-search.html" role="button">Advanced</a>
                 </div>
             </div>
-            <div class="row">
-                <form action="https://google.com/images">
-                    <div class="col-sm-12">
-                        <input type="text" name="q">
-                    </div>
-                    <div class="col-sm-6">
-                        <input type="submit" value="Google Image Search">
-                    </div>
-                </form>
+
+            <!-- Icon -->
+            <div class="row text-center">
+                <div class="col">
+                    <img id="responsive" src="temp-icon.gif">
+                </div>
             </div>
+
+            <!-- Search Form -->
+            <div class="row text-center">
+                <div id="searchForm" class="container-fluid">
+                    <form action="https://google.com/images">
+                        <div id="searchBox" class="row">
+                            <div class="col-sm-8 col-sm-offset-2">
+                                <input class="form-control form-rounded" type="text" name="q">
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <button class="btn btn-light" type="submit" name="btnG" value="Search">Google Search</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
         </div>
     </body>
 </html>
